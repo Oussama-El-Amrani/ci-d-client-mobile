@@ -159,7 +159,6 @@ class _InstallAppsScreenState extends State<InstallAppsScreen> {
           },
                 ),
               ),
-            ),
           ],
         ),
       ),

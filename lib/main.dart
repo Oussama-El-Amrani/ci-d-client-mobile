@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Server Deployment App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.grey[100],
+        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
@@ -126,12 +126,12 @@ class _MainScreenState extends State<MainScreen>
         bottom: TabBar(
           controller: _tabController,
           tabs: AppRouter.tabs,
-          indicatorColor: Colors.white,
+          indicatorColor: const Color.fromARGB(255,118, 215, 240),
           indicatorWeight: 3,
           labelStyle: TextStyle(fontWeight: FontWeight.bold),
           unselectedLabelStyle: TextStyle(fontWeight: FontWeight.normal),
-          labelColor: Colors.white,
-          unselectedLabelColor: Colors.white.withOpacity(0.7),
+          labelColor: const Color.fromARGB(255, 118, 215, 240),
+          unselectedLabelColor: const Color.fromARGB(255, 227, 245, 247).withOpacity(0.7),
         ),
       ),
       body: TabBarView(controller: _tabController, children: AppRouter.screens),
@@ -143,7 +143,7 @@ class _MainScreenState extends State<MainScreen>
               right: 0,
               child: FloatingActionButton(
                 mini: true,
-                backgroundColor: Colors.grey[300],
+                backgroundColor: const Color.fromARGB(255, 255, 15, 15),
                 onPressed: _scrollToTop,
                 child: Icon(Icons.arrow_upward, color: Colors.black54),
               ),
